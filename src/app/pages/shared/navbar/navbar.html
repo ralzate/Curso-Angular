@@ -1,0 +1,18 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <a routerLink="/">Angular 20</a>
+  </div>
+
+  <button class="navbar-toggler" (click)="toggleMenu()">
+    ☰
+  </button>
+
+  <div class="navbar-menu" [class.show]="menuAbierto">
+    <a routerLink="/products" routerLinkActive="active">Productos</a>
+    <a routerLink="/pokemons" routerLinkActive="active">Pokemones</a>
+    <a routerLink="/apis" routerLinkActive="active">APIs</a>
+    <a routerLink="/json-users" routerLinkActive="active">JSON Users</a>
+    <a routerLink="/about" routerLinkActive="active">Acerca</a>
+    <a routerLink="/contact" routerLinkActive="active">Contacto</a>
+  </div>
+</nav>

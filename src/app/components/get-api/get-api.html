@@ -1,0 +1,28 @@
+<div class="container mt-4">
+  <h3>Usuarios JSON</h3>
+  <ul class="list-group mb-4">
+    @for (user of userList; track user.id) {
+      <li class="list-group-item">
+        {{ user.name }} - {{ user.email }}
+      </li>
+    }
+  </ul>
+
+  <h3>Tareas TODO</h3>
+  <ul class="list-group mb-4">
+    @for (todo of todoList.slice(0, 5); track todo.id) {
+      <li class="list-group-item">
+        {{ todo.title }}
+      </li>
+    }
+  </ul>
+
+  <h3>Usuarios externos (API real)</h3>
+  <ul class="list-group">
+    @for (user of get_all_users; track user.userId) {
+      <li class="list-group-item">
+        {{ user.fullName }} - {{ user.emailId }}
+      </li>
+    }
+  </ul>
+</div>

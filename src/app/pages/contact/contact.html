@@ -1,0 +1,14 @@
+<div class="container mt-4">
+  <h2 class="text-success">Contacto</h2>
+  <form (ngSubmit)="enviar()" class="mt-3">
+    <div class="mb-3">
+      <label class="form-label">Nombre</label>
+      <input [(ngModel)]="name" name="nombre" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Mensaje</label>
+      <textarea [(ngModel)]="message" name="mensaje" class="form-control" rows="4" required></textarea>
+    </div>
+    <button class="btn btn-success">Enviar</button>
+  </form>
+</div>

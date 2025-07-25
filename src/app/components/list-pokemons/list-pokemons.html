@@ -1,0 +1,15 @@
+<div class="container mt-4">
+  <h3>Lista de Pokemones</h3>
+  <div class="row">
+    @for (pokemon of pokemons; track pokemon.name) {
+      <div class="col-md-4 mb-2">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ pokemon.name }}</h5>
+            <p class="card-text">Tipo: {{ pokemon.type }}</p>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="container mt-4">
+  <h1 class="text-primary mb-3">Curso Angular 20 - Prof. Alejandro Alzate</h1>
+  <p class="lead">Explora y practica conceptos fundamentales y modernos de Angular 20. Da clic en cada módulo para ir a su contenido interactivo.</p>
+
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let topic of topics">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-info fw-bold">
+            <i class="bi bi-code-slash me-2"></i>{{ topic.title }}
+          </h5>
+          <p class="card-text">{{ topic.desc }}</p>
+          <a [routerLink]="topic.route" class="btn btn-outline-primary mt-auto">
+            <i class="bi bi-arrow-right-circle-fill me-1"></i> Ver sección
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="my-4">
+
+  <footer class="text-muted text-center">
+    <p class="small mb-0">Curso actualizado con Angular 20 y buenas prácticas modernas 🚀</p>
+  </footer>
+</div>
