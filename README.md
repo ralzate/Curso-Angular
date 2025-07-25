@@ -1,6 +1,6 @@
 # Angular 20 Course App 
 
-Aplicación educativa creada con Angular 20 como parte del curso impartido por el profesor Alejandro Alzate. Esta aplicación está diseñada para enseñar paso a paso los fundamentos y características modernas de Angular, incluyendo el uso de componentes standalone, directivas modernas como `@for`, consumo de APIs, formularios reactivos y más.
+Aplicación educativa creada con Angular 20, Esta aplicación está diseñada para enseñar paso a paso los fundamentos y características modernas de Angular, incluyendo el uso de componentes standalone, directivas modernas como `@for`, consumo de APIs, formularios reactivos y más.
 
 ## Tecnologías utilizadas
 
